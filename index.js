@@ -1,9 +1,21 @@
 
-function takeANumber(katzDeliLine, name) {
-  var spot = katzDeliLine.length + 1;
-  katzDeliLine.push(name);
-  return "Welcome, " + name + ". You are number " + spot + " in line."
+// function takeANumber(katzDeliLine, name) {
+//   var spot = katzDeliLine.length + 1;
+//   katzDeliLine.push(name);
+//   return "Welcome, " + name + ". You are number " + spot + " in line."
+// }
+ var spot = 0;
+ 
+function takeANumber(katzDeliLine) {
+ 
+  
+  spot += 1;
+  
+  katzDeliLine.push(spot);
+  
+  return 'Welcome you are number ' + spot
 }
+
 
 function nowServing(katzDeliLine) {
   
